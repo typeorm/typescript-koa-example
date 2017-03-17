@@ -1,0 +1,45 @@
+{
+  "name": "typeorm-typescript-koa-example",
+  "version": "0.0.1",
+  "description": "Example how to use Koa and TypeORM with TypeScript.",
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "author": {
+    "name": "Umed Khudoiberdiev",
+    "email": "pleerock.me@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/typeorm/typescript-koa-example.git"
+  },
+  "bugs": {
+    "url": "https://github.com/typeorm/typescript-koa-example/issues"
+  },
+  "tags": [
+    "orm",
+    "typescript",
+    "typescript-orm",
+    "typeorm-sample",
+    "typeorm-example",
+    "typeorm-koa-example"
+  ],
+  "devDependencies": {
+    "typescript": "^2.1.5"
+  },
+  "dependencies": {
+    "@types/koa": "^2.0.39",
+    "@types/koa-bodyparser": "^3.0.23",
+    "@types/koa-router": "^7.0.21",
+    "@types/node": "^7.0.4",
+    "body-parser": "^1.17.1",
+    "koa": "^2.2.0",
+    "koa-bodyparser": "^3.2.0",
+    "koa-router": "^7.0.1",
+    "mysql": "^2.12.0",
+    "reflect-metadata": "^0.1.9",
+    "typeorm": "0.0.9"
+  },
+  "scripts": {
+    "start": "tsc && node src/index.js"
+  }
+}
