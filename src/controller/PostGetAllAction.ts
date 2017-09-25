@@ -1,5 +1,5 @@
 import {Context} from "koa";
-import {getEntityManager} from "typeorm";
+import {getManager} from "typeorm";
 import {Post} from "../entity/Post";
 
 /**
@@ -8,7 +8,7 @@ import {Post} from "../entity/Post";
 export async function postGetAllAction(context: Context) {
 
     // get a post repository to perform operations with post
-    const postRepository = getEntityManager().getRepository(Post);
+    const postRepository = getManager().getRepository(Post);
 
     // load a post by a given post id
     const posts = await postRepository.find();

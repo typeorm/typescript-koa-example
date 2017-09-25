@@ -1,5 +1,5 @@
 import {Context} from "koa";
-import {getEntityManager} from "typeorm";
+import {getManager} from "typeorm";
 import {Post} from "../entity/Post";
 
 /**
@@ -8,7 +8,7 @@ import {Post} from "../entity/Post";
 export async function postSaveAction(context: Context) {
 
     // get a post repository to perform operations with post
-    const postRepository = getEntityManager().getRepository(Post);
+    const postRepository = getManager().getRepository(Post);
 
     // create a real post object from post json object sent over http
     const newPost = postRepository.create(context.request.body);
