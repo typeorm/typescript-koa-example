@@ -10,7 +10,7 @@ export async function postGetAllAction(context: Context) {
     // get a post repository to perform operations with post
     const postRepository = getManager().getRepository(Post);
 
-    // load a post by a given post id
+    // load all posts
     const posts = await postRepository.find();
 
     // return loaded posts
