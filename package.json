@@ -24,20 +24,18 @@
     "typeorm-koa-example"
   ],
   "devDependencies": {
-    "typescript": "^2.5.3"
+    "@types/koa": "^2.0.45",
+    "@types/koa-bodyparser": "^4.2.0",
+    "@types/koa-router": "^7.0.27",
+    "@types/node": "^9.6.5",
+    "typescript": "^2.8.1"
   },
   "dependencies": {
-    "@types/koa": "^2.0.39",
-    "@types/koa-bodyparser": "^3.0.25",
-    "@types/koa-router": "^7.0.23",
-    "@types/node": "^8.0.31",
-    "body-parser": "^1.18.2",
-    "koa": "^2.3.0",
+    "koa": "^2.5.0",
     "koa-bodyparser": "^4.2.0",
-    "koa-router": "^7.2.1",
-    "mysql": "^2.14.1",
-    "reflect-metadata": "^0.1.10",
-    "typeorm": "^0.1.0"
+    "koa-router": "^7.4.0",
+    "mysql": "^2.15.0",
+    "typeorm": "^0.2.0"
   },
   "scripts": {
     "start": "tsc && node src/index.js"
